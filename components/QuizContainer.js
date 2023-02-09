@@ -18,7 +18,7 @@ export default function QuizContainer() {
 
   return (
     <div className="quizContainer">
-      {state.presentQuestion === -1 && <h2>Take Your Love Language Test</h2>}
+      {state.presentQuestion === -1 && <h2>Take A Love Language Test</h2>}
 
       {state.presentQuestion == -1 && (
         <>
