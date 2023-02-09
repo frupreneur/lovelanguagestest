@@ -5,7 +5,7 @@ import { Meta } from "@/components";
 export default function Page() {
   return (
     <div className="site-wrap">
-      <Meta title="Physical Touch: Understanding Love Languages | Love Languages Test" />
+      <Meta title="Physical Touch: Understanding Love Languages | Love Language Test" />
       <article>
         <h1>Physical Touch: Understanding Love Languages</h1>
         <p>

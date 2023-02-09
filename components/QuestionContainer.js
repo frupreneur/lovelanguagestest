@@ -28,6 +28,7 @@ export default function QuestionContainer() {
   let currentQuestion = questions[state.presentQuestion];
   let answerARef = React.useRef(null);
   let answerBRef = React.useRef(null);
+  let progressRef = React.useRef(null);
 
   const handleA = () => {
     answerARef.current.classList.add("active");
@@ -82,14 +83,14 @@ export default function QuestionContainer() {
   };
 
   React.useEffect(() => {
-    console.log(state.presentQuestion, questions.length);
     let timer;
     if (loading) {
       timer = setTimeout(() => {
         setLoading(false);
-      }, 1000);
+      }, 500);
     }
     if (generatingResults) {
+
       timer = setTimeout(() => {
         router.push("/results");
         setState((old) => ({
@@ -104,7 +105,7 @@ export default function QuestionContainer() {
           presentQuestion: -1,
           cache: { name: old.name, score: old.score },
         }));
-      }, 1000);
+      }, 500);
     }
   }, [loading, generatingResults]);
 
@@ -132,8 +133,19 @@ export default function QuestionContainer() {
 
   return (
     <div className="question-wrapper">
-      <h2>It’s more meaningful to me when...</h2>
+      <p>Answer honestly.</p>
+      <h2>It means more to me when...</h2>
+
       <div className="questionContainer">
+        <div className="progressContainer">
+          <div
+            ref={progressRef}
+            style={{
+              width: `${(state.presentQuestion+1 / questions.length) * 100}%`,
+            }}
+            className="progress"
+          ></div>
+        </div>
         <div ref={answerARef} className="answer" onClick={handleA}>
           <p>
             {currentQuestion.a.answer.charAt(0).toUpperCase() +
@@ -147,7 +159,8 @@ export default function QuestionContainer() {
           </p>
         </div>
       </div>
-      {state.presentQuestion > 0 && (
+
+      {/* {state.presentQuestion > 0 && (
         <button
           onClick={() =>
             setState({
@@ -165,7 +178,7 @@ export default function QuestionContainer() {
         >
           <MdOutlineRestartAlt /> Start All Over
         </button>
-      )}
+      )} */}
     </div>
   );
 }

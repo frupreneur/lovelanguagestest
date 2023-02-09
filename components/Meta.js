@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 export default function Meta({
-  title = "Love Language Test - Take your love language quiz",
+  title = "Love Language Test - Take your love language quiz | Love Languages Test",
   description = "Take this free love language test to discover your primary love language, taking this love language quiz helps you better connect with your loved ones.",
   url = "https://www.lovelanguagestest.com",
 }) {

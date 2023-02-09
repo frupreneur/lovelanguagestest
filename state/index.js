@@ -14,6 +14,7 @@ export default function StateProvider({ children }) {
       pt: 0,
     },
     presentQuestion: -1,
+
     cache: {
       name: "Demo User",
       score: {

@@ -35,7 +35,7 @@ export default function Results() {
         <div className="question-wrapper">
           <h2
             style={{ textAlign: "left" }}
-          >{`${name}'s Love Language Test`}</h2>
+          >{`${name}'s Love Languages`}</h2>
           <div className="questionContainer">
             {scores.map((x, i) => {
               return (

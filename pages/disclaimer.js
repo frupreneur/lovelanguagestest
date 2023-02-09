@@ -5,7 +5,7 @@ import { Meta } from "@/components";
 export default function disclaimer() {
   return (
     <>
-      <Meta title="Disclaimer / Privacy Policy - Love Languages T" />
+      <Meta title="Disclaimer / Privacy Policy - Love Languages Test" />
       <div className="site-wrap">
         <article>
           <h1>DISCLAIMER</h1>
