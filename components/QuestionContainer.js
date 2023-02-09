@@ -31,6 +31,7 @@ export default function QuestionContainer() {
   let progressRef = React.useRef(null);
 
   const handleA = () => {
+    router.push("/")
     answerARef.current.classList.add("active");
     setTimeout(() => {
       if (state.presentQuestion + 1 === questions.length) {
@@ -57,6 +58,7 @@ export default function QuestionContainer() {
   };
 
   const handleB = () => {
+    router.push("/")
     answerBRef.current.classList.add("active");
     setTimeout(() => {
       if (state.presentQuestion + 1 === questions.length) {
