@@ -16,10 +16,8 @@ export default function Home(props) {
           What Is Your Love Language? Take this free love language test
         </h1>
         <p>
-          This free love language test is a psychological test which reveals how
-          you prefer to give and receive love. Discover your primary love
-          language, what it means, and how you can use it to better connect with
-          your loved ones.{" "}
+          Discover your primary love language, what it means, and how you can
+          use it to better connect with your loved ones.{" "}
         </p>
         <QuizContainer />
         <article className="articleHome">

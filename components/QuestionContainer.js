@@ -90,7 +90,6 @@ export default function QuestionContainer() {
       }, 500);
     }
     if (generatingResults) {
-
       timer = setTimeout(() => {
         router.push("/results");
         setState((old) => ({
@@ -141,7 +140,9 @@ export default function QuestionContainer() {
           <div
             ref={progressRef}
             style={{
-              width: `${(state.presentQuestion+1 / questions.length) * 100}%`,
+              width: `${
+                ((state.presentQuestion + 1) / questions.length) * 100
+              }%`,
             }}
             className="progress"
           ></div>
