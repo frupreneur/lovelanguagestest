@@ -8,7 +8,6 @@ export default function Home(props) {
     <>
       <Meta
         description="Take this free love language test to discover your primary love language, taking this love language quiz helps you better connect with your loved ones."
-        url={`https://lovelanguagestest.com`}
       />
 
       <div className="site-wrap" id="site-wrap">

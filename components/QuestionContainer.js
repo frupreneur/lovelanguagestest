@@ -134,8 +134,8 @@ export default function QuestionContainer() {
 
   return (
     <div className="question-wrapper">
-      <p>Answer honestly.</p>
-      <h2>It means more to me when...</h2>
+      <p>Select Answer Below</p>
+      <h2>It means more to me when...?</h2>
 
       <div className="questionContainer">
         <div className="progressContainer">
@@ -143,7 +143,7 @@ export default function QuestionContainer() {
             ref={progressRef}
             style={{
               width: `${
-                ((state.presentQuestion + 1) / questions.length) * 100
+                ((state.presentQuestion) / questions.length) * 100
               }%`,
             }}
             className="progress"
@@ -163,7 +163,7 @@ export default function QuestionContainer() {
         </div>
       </div>
 
-      {/* {state.presentQuestion > 0 && (
+      {state.presentQuestion > 0 && (
         <button
           onClick={() =>
             setState({
@@ -181,7 +181,7 @@ export default function QuestionContainer() {
         >
           <MdOutlineRestartAlt /> Start All Over
         </button>
-      )} */}
+      )}
     </div>
   );
 }

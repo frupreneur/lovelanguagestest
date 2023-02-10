@@ -15,16 +15,7 @@ export default function StateProvider({ children }) {
     },
     presentQuestion: -1,
 
-    cache: {
-      name: "Demo User",
-      score: {
-        a: 5,
-        s: 2,
-        g: 6,
-        t: 3,
-        pt: 7,
-      },
-    },
+    cache: {},
   });
   return (
     <AppContext.Provider value={{ state, setState, DATABASE }}>
