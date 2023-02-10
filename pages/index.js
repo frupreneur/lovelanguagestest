@@ -6,9 +6,7 @@ import Link from "next/link";
 export default function Home(props) {
   return (
     <>
-      <Meta
-        description="Take this free love language test to discover your primary love language, taking this love language quiz helps you better connect with your loved ones."
-      />
+      <Meta description="Find Out What Makes Your Heart Sing: Take this Love Language Test and Connect Like Never Before!" />
 
       <div className="site-wrap" id="site-wrap">
         <h1 style={{ marginTop: "0 !important" }}>
