@@ -5,7 +5,13 @@ import { Meta } from "@/components";
 export default function Page() {
   return (
     <div className="site-wrap">
-      <Meta title="Receiving Gifts: Understanding Love Languages | Love Languages Test" />
+      <Meta
+        title="Receiving Gifts: Understanding Love Languages | Love Languages Test"
+        description={` Have you ever heard the phrase "actions speak louder than words"?
+          Well, in the world of love, gifts can say a lot about the feelings of
+          one person towards another. This is where the concept of "Receiving
+          Gifts" as a love language comes in. `}
+      />
       <article>
         <h1>Receiving Gifts: Understanding Love Languages</h1>
         <p>
@@ -18,8 +24,9 @@ export default function Page() {
           The "love language" theory was first introduced by Dr. Gary Chapman in
           his book, "The 5 Love Languages: The Secret to Love That Lasts."
           According to Dr. Chapman, everyone has a love language - the specific
-          way they feel most loved and appreciated by their partner. <br/><br/>The five
-          love languages are:
+          way they feel most loved and appreciated by their partner. <br />
+          <br />
+          The five love languages are:
         </p>
         <ol>
           <li>
@@ -107,7 +114,6 @@ export default function Page() {
           <Link href="/">Take the love language test now!</Link> Remember, it's
           never too late to learn and grow in your relationship.
         </p>
-        
       </article>
     </div>
   );

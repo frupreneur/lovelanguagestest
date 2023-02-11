@@ -5,7 +5,12 @@ import { Meta } from "@/components";
 export default function Page() {
   return (
     <div className="site-wrap">
-      <Meta title="Acts Of Service: Understanding Love Languages | Love Languages Test" />
+      <Meta
+        title="Acts Of Service: Understanding Love Languages | Love Languages Test"
+        description={`"Acts of Service" is one of the five love languages that was first
+        introduced in the book "The 5 Love Languages" by Gary Chapman. It is a
+        concept that has helped millions of people understand their own love`}
+      />
       <article>
         <h1>Acts Of Service: Understanding Love Languages</h1>
         <p>
