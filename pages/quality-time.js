@@ -7,9 +7,7 @@ export default function Page() {
     <div className="site-wrap">
       <Meta
         title="Quality Time: Understanding Love Languages | Love Languages Test"
-        description={`Are you looking for a way to strengthen your relationship with your
-          significant other? Well, you’re in luck because there’s a love
-          language test that’s specifically designed to do just that`}
+        description="Are you looking for a way to strengthen your relationship with your significant other? Well, you’re in luck because there’s a love language test that’s specifically designed to do just that"
       />
       <article>
         <h1>Quality Time: Understanding Love Languages</h1>

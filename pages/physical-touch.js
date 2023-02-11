@@ -7,9 +7,7 @@ export default function Page() {
     <div className="site-wrap">
       <Meta
         title="Physical Touch: Understanding Love Languages | Love Languages Test"
-        description={`When it comes to expressing and receiving love, everyone has their own
-      unique way of doing so. This is where the concept of the "Love
-      Languages" comes into play. consider taking a love language test today `}
+        description="When it comes to expressing and receiving love, everyone has their own unique way of doing so. This is where the concept of the Love Languages comes into play. consider taking a love language test today"
       />
       <article>
         <h1>Physical Touch: Understanding Love Languages</h1>

@@ -10,6 +10,7 @@ export default function contact() {
     <>
       <Meta
         title="Contact Us - Love Languages Test"
+        description={``}
       
       />
       <ContactForm />
