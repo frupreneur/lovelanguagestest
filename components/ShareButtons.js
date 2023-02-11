@@ -15,7 +15,7 @@ export default function ShareButtons() {
         </p>
         <div className="share-buttons">
           <Link
-            href={`https://api.whatsapp.com/send?text=Do you know your love language? Take this free *love language test* to learn how to better connect with someone you love. ${link}`}
+            href={`https://api.whatsapp.com/send?text=Do you know your love language? %0a %0aFind Out What Makes Your Heart Sing: Take this free love language test to discover your primary love language, what it means, and how you can use it to better connect with someone you love. 👇 %0a${link}`}
             target="_blank"
             className="share-button wa"
           >

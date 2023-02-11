@@ -14,7 +14,7 @@ export default function QuizContainer() {
 
   React.useEffect(() => {
     inputRef.current.focus();
-    
+
     if (error) {
       setTimeout(() => setError(null), 1000);
     }
@@ -22,7 +22,7 @@ export default function QuizContainer() {
 
   return (
     <div className="quizContainer">
-      {state.presentQuestion === -1 && <h2>Take Your Love Language Test</h2>}
+     
 
       {state.presentQuestion == -1 && (
         <>
