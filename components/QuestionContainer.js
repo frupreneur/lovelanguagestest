@@ -31,7 +31,7 @@ export default function QuestionContainer() {
   let progressRef = React.useRef(null);
 
   const handleA = () => {
-    router.push("/")
+    router.push("/");
     answerARef.current.classList.add("active");
     setTimeout(() => {
       if (state.presentQuestion + 1 === questions.length) {
@@ -58,7 +58,7 @@ export default function QuestionContainer() {
   };
 
   const handleB = () => {
-    router.push("/")
+    router.push("/");
     answerBRef.current.classList.add("active");
     setTimeout(() => {
       if (state.presentQuestion + 1 === questions.length) {
@@ -93,7 +93,6 @@ export default function QuestionContainer() {
     }
     if (generatingResults) {
       timer = setTimeout(() => {
-        router.push("/results");
         setState((old) => ({
           name: "",
           score: {
@@ -106,9 +105,12 @@ export default function QuestionContainer() {
           presentQuestion: -1,
           cache: { name: old.name, score: old.score },
         }));
+        router.push("/results");
       }, 500);
     }
   }, [loading, generatingResults]);
+
+  console.log(loading, generatingResults);
 
   if (generatingResults) {
     return (
@@ -142,9 +144,7 @@ export default function QuestionContainer() {
           <div
             ref={progressRef}
             style={{
-              width: `${
-                ((state.presentQuestion) / questions.length) * 100
-              }%`,
+              width: `${(state.presentQuestion / questions.length) * 100}%`,
             }}
             className="progress"
           ></div>

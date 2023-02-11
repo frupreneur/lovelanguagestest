@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Meta({
   title = "Love Language Test - Take free love language quiz",
-  description = "Take this free love language test to discover your primary love language, taking this love language quiz helps you better connect with your loved ones.",
+  description = "Find Out What Makes Your Heart Sing: Take this free love language test to discover your primary love language.",
   url = "https://www.lovelanguagestest.com",
 }) {
   return (

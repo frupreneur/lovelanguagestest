@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default function ShareButtons() {
   const link = "https://www.lovelanguagestest.com";
-
   return (
     <div className="card">
       <div className="share-container">
@@ -16,7 +15,7 @@ export default function ShareButtons() {
         </p>
         <div className="share-buttons">
           <Link
-            href={`https://api.whatsapp.com/send?text=Do you know your love language? Take this *love language test* to learn how to better connect with your loved ones ${link}`}
+            href={`https://api.whatsapp.com/send?text=Do you know your love language? Take this free *love language test* to learn how to better connect with someone you love. ${link}`}
             target="_blank"
             className="share-button wa"
           >

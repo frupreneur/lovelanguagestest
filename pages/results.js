@@ -22,6 +22,7 @@ export default function Results() {
   const router = useRouter();
 
   React.useEffect(() => {
+    
     let timer = setTimeout(() => {
       if (state.cache.name) {
         setLoading(false);
