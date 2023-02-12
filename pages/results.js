@@ -6,7 +6,7 @@ import { GiLovers } from "react-icons/gi";
 import { FaGift, FaWhatsapp, FaRegCopy, FaFacebook } from "react-icons/fa";
 import { BsChatTextFill } from "react-icons/bs";
 import { RiUserSettingsFill } from "react-icons/ri";
-import {ShareButtons} from "@/components"
+import { Meta, ShareButtons } from "@/components";
 
 import { useRouter } from "next/router";
 
@@ -22,7 +22,6 @@ export default function Results() {
   const router = useRouter();
 
   React.useEffect(() => {
-    
     let timer = setTimeout(() => {
       if (state.cache.name) {
         setLoading(false);
@@ -57,6 +56,7 @@ export default function Results() {
   if (loading) {
     return (
       <div className="site-wrap" id="site-wrap">
+        <Meta index="noindex" />
         <div className="quizContainer">
           <div className="question-wrapper">
             <p>Generating results...</p>
@@ -68,6 +68,7 @@ export default function Results() {
   if (noCache) {
     return (
       <div className="site-wrap" id="site-wrap">
+        <Meta index="noindex" />
         <div className="quizContainer">
           <div className="question-wrapper">
             <h2>{`Uuhmmm, Seems like you haven't taken the love language test yet`}</h2>
@@ -88,6 +89,7 @@ export default function Results() {
   }
   return (
     <div className="site-wrap" id="site-wrap">
+      <Meta index="noindex" />
       <div className="quizContainer">
         <div className="question-wrapper">
           <h2 style={{ textAlign: "left" }}>{`${name}'s Love Languages`}</h2>

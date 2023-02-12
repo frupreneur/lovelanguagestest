@@ -22,7 +22,6 @@ export default function Layout({ children }) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
-        <meta name="robots" content="index, follow" />
       </Head>
       <main className={andika.className}>
         <Header />
