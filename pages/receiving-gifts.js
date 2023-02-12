@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div className="site-wrap">
       <Meta
-        title="Receiving Gifts: Understanding Love Languages | Love Languages Test"
+        title="Receiving Gifts: Love Language Test"
         description="Have you ever heard the phrase actions speak louder than words? Well, in the world of love, gifts can say a lot about the feelings of one person towards another. This is where the concept of Receiving Gifts as a love language comes in."
       />
       <article>
