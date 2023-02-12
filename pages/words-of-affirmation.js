@@ -10,7 +10,7 @@ export default function Page() {
         description="Do you ever feel like your partner just doesn't get you? It might be time to explore the world of love languages and consider taking a love language test"
       />
       <article>
-        <h1>Words of Affirmation: Understanding Love Languages</h1>
+        <h1>Words of Affirmation: Love Language Test</h1>
         <p>
           Do you ever feel like your partner just doesn't "get" you, or that
           they don't show their love in a way that makes you feel truly

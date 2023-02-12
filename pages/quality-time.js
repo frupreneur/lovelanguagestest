@@ -10,7 +10,7 @@ export default function Page() {
         description="Are you looking for a way to strengthen your relationship with your significant other? Well, you’re in luck because there’s a love language test that’s specifically designed to do just that"
       />
       <article>
-        <h1>Quality Time: Understanding Love Languages</h1>
+        <h1>Quality Time: Love Language Test</h1>
         <p>
           Are you looking for a way to strengthen your relationship with your
           significant other? Well, you’re in luck because there’s a love
