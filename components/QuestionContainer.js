@@ -110,7 +110,6 @@ export default function QuestionContainer() {
     }
   }, [loading, generatingResults]);
 
-  console.log(loading, generatingResults);
 
   if (generatingResults) {
     return (

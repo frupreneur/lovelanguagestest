@@ -13,7 +13,9 @@ export default function QuizContainer() {
   const inputRef = React.useRef(null);
 
   React.useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
 
     if (error) {
       setTimeout(() => setError(null), 1000);
@@ -22,8 +24,6 @@ export default function QuizContainer() {
 
   return (
     <div className="quizContainer">
-     
-
       {state.presentQuestion == -1 && (
         <>
           <Image
