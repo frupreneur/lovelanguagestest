@@ -18,10 +18,11 @@ export default function Results() {
 
   const link = "https://www.lovelanguagestest.com";
 
-  const { state } = useGlobalState();
+  const { state, setState } = useGlobalState();
   const router = useRouter();
 
   React.useEffect(() => {
+    setState((old) => ({ ...old, presentQuestion: -1 }));
     let timer = setTimeout(() => {
       if (state.cache.name) {
         setLoading(false);
@@ -60,6 +61,7 @@ export default function Results() {
         <div className="quizContainer">
           <div className="question-wrapper">
             <p>Generating results...</p>
+            <div className="loading"></div>
           </div>
         </div>
       </div>

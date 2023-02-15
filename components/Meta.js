@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 export default function Meta({
-  title = "Love Language Test - Take free love language quiz",
+  title = `Love Language Test - Free love language quiz ${new Date().getFullYear()} `,
   description = "Find Out What Makes Your Heart Sing: Take this free love language test to discover your primary love language, what it means, and how you can use it to better connect with someone you love.",
   url = "https://www.lovelanguagestest.com",
   index = "index, follow"

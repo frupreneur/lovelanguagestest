@@ -102,14 +102,12 @@ export default function QuestionContainer() {
             t: 0,
             pt: 0,
           },
-          presentQuestion: -1,
           cache: { name: old.name, score: old.score },
         }));
         router.push("/results");
       }, 500);
     }
   }, [loading, generatingResults]);
-
 
   if (generatingResults) {
     return (
