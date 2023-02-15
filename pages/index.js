@@ -9,7 +9,9 @@ export default function Home(props) {
       <Meta />
 
       <div className="site-wrap" id="site-wrap">
-        <h1 style={{ marginTop: "0 !important" }}>Free Love Language Test</h1>
+        <h1
+          style={{ marginTop: "0 !important" }}
+        >{`Free Love Language Test ${new Date().getFullYear()}`}</h1>
         <p>
           Find Out What Makes Your Heart Sing: Take this free love language test
           to discover your primary love language, what it means, and how you can
