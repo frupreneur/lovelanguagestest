@@ -11,7 +11,6 @@ import { Meta, ShareButtons } from "@/components";
 import { useRouter } from "next/router";
 
 export default function Results() {
-  const [loading, setLoading] = React.useState(true);
   const [noCache, setNoCache] = React.useState(true);
   const [name, setName] = React.useState(true);
   const [scores, setScores] = React.useState(true);
@@ -25,7 +24,6 @@ export default function Results() {
     setState((old) => ({ ...old, presentQuestion: -1 }));
     let timer = setTimeout(() => {
       if (state.cache.name) {
-        setLoading(false);
         setNoCache(false);
         setName(state.cache.name);
         setScores(
@@ -47,30 +45,18 @@ export default function Results() {
               return { ll: name, score: x[1] };
             })
         );
-      } else {
-        setLoading(false);
       }
     }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    return (
-      <div className="site-wrap" id="site-wrap">
-        <Meta index="noindex" />
-        <div className="quizContainer">
-          <div className="question-wrapper">
-            <p>Generating results...</p>
-            <div className="loading"></div>
-          </div>
-        </div>
-      </div>
-    );
-  }
   if (noCache) {
     return (
       <div className="site-wrap" id="site-wrap">
-        <Meta index="noindex" />
+        <Meta
+          title="Love Language Test Results"
+          description="View Your Language Language Test Results "
+        />
         <div className="quizContainer">
           <div className="question-wrapper">
             <h2>{`Uuhmmm, Seems like you haven't taken the love language test yet`}</h2>
@@ -91,7 +77,10 @@ export default function Results() {
   }
   return (
     <div className="site-wrap" id="site-wrap">
-      <Meta index="noindex" />
+      <Meta
+        title="Love Language Test Results"
+        description="View Your Language Language Test Results "
+      />
       <div className="quizContainer">
         <div className="question-wrapper">
           <h2 style={{ textAlign: "left" }}>{`${name}'s Love Languages`}</h2>

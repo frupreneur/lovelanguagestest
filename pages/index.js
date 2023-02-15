@@ -9,16 +9,18 @@ export default function Home(props) {
       <Meta />
 
       <div className="site-wrap" id="site-wrap">
-        <h1 style={{ marginTop: "0 !important" }}>
-          Free Love Language Test
-        </h1>
+        <h1 style={{ marginTop: "0 !important" }}>Free Love Language Test</h1>
         <p>
           Find Out What Makes Your Heart Sing: Take this free love language test
-          to discover your primary love language, what it means, and how you can use it to better connect with someone you love.
+          to discover your primary love language, what it means, and how you can
+          use it to better connect with someone you love.
         </p>
         <QuizContainer />
         <article className="articleHome">
-          <h2>What are love languages and why do I need to take a love language test?</h2>
+          <h2>
+            What are love languages and why do I need to take a love language
+            test?
+          </h2>
           <p>
             Love is a complex and multifaceted emotion that is expressed and
             experienced in different ways. To better understand and communicate
@@ -45,7 +47,6 @@ export default function Home(props) {
               </Link>
             </p>
           </div>
-
           <div className="quizContainer">
             <h2>Acts of Service</h2>
             <p>
@@ -62,7 +63,6 @@ export default function Home(props) {
               </Link>
             </p>
           </div>
-
           <div className="quizContainer">
             <h2>Receiving Gifts</h2>
             <p>
@@ -106,7 +106,6 @@ export default function Home(props) {
               <Link href="/quality-time">Learn more about Quality Time</Link>
             </p>
           </div>
-
           <p>
             It is important to note that everyone experiences and expresses love
             differently, and everyone's love language is unique to them. Some
@@ -115,23 +114,22 @@ export default function Home(props) {
             language of your partner can greatly improve the overall health and
             happiness of your relationship.
           </p>
-
           <p>
             In conclusion, the concept of love languages provides a helpful
             framework for understanding and appreciating the different ways
-            people give and receive love. By taking a  <Link href="/">love language test</Link> and
-            learning and understanding your own love language and that of your
-            partner, you can create a stronger, more loving, and fulfilling
-            relationship. Don't wait, take the <Link href="/">love language test</Link> now to get
-            started on the path to a better understanding of love in your
+            people give and receive love. By taking a{" "}
+            <Link href="/">love language test</Link> and learning and
+            understanding your own love language and that of your partner, you
+            can create a stronger, more loving, and fulfilling relationship.
+            Don't wait, take the <Link href="/">love language test</Link> now to
+            get started on the path to a better understanding of love in your
             relationship.
           </p>
-          <Link href="#">START YOUR LOVE LANGUAGE QUIZ</Link>
+          <Link href="/" alt="love language test">
+            {" "}
+            <button>Start Love Language Test</button>
+          </Link>{" "}
         </article>
-
-        {/* {props.data.map((dbItem) => (
-          <DiseaseContainer key={dbItem.route} data={dbItem} />
-        ))} */}
       </div>
     </>
   );

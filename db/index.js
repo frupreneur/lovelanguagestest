@@ -1,5 +1,5 @@
 export const menu = [
-  { name: "Test", path: "/" },
+  { name: "Home", path: "/" },
   { name: "Words Of Affirmation", path: "/words-of-affirmation" },
   { name: "Acts Of Service", path: "/acts-of-service" },
   { name: "Receiving Gifts", path: "/receiving-gifts" },
@@ -9,8 +9,10 @@ export const menu = [
   // { name: "Contact us", path: "/contact" },
 ];
 export const footerMenu = [
-  { name: "Love Language test", path: "/" },
-  { name: "Disclaimer / Privacy", path: "/disclaimer" },
+  { name: "Love Language Test", path: "/" },
+  { name: "Love Language Test Results", path: "/results" },
+
+  { name: "Privacy Policy", path: "/privacy-policy" },
   { name: "Contact us", path: "/contact" },
 ];
 
