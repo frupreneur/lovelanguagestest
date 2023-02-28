@@ -45,7 +45,7 @@ export default function QuizContainer() {
           <button
             onClick={() => {
               if (inputRef.current.value) {
-                router.push("/");
+                router.push("/tester");
                 setState((old) => ({
                   ...old,
                   name: inputRef.current.value,

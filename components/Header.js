@@ -37,7 +37,7 @@ export default function Header() {
                 <Link
                   href={menuItem.path}
                   onClick={() => {
-                    if (document.documentElement.clientWidth <= 800) {
+                    if (!offEl) {
                       setoffEl("offEl");
                       document.documentElement.style =
                         "overflow: null !important";

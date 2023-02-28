@@ -1,9 +1,12 @@
-import React from "react";
-import { QuizContainer, Ad, Meta } from "@/components";
+import { Meta } from "@/components";
 import { DATABASE } from "@/db";
 import Link from "next/link";
+import Image from "next/image";
+import { GiSelfLove } from "react-icons/gi";
+import { useRouter } from "next/router";
 
 export default function Home(props) {
+  const router = useRouter();
   return (
     <>
       <Meta />
@@ -17,7 +20,29 @@ export default function Home(props) {
           to discover your primary love language, what it means, and how you can
           use it to better connect with someone you love.
         </p>
-        <QuizContainer />
+
+        <div className="quizContainer">
+          <Image
+            style={{}}
+            src="/assets/images/lovelanguagetest.svg"
+            width="150"
+            height="150"
+            alt="Love Language Test"
+            priority
+          />
+          {
+            <button
+              onClick={() => {
+                router.push("/tester");
+              }}
+            >
+              {<GiSelfLove />}
+              {"START YOUR TEST"}
+            </button>
+          }
+        </div>
+
+        {/* <QuizContainer /> */}
         <article className="articleHome">
           <h2>
             What are love languages and why do I need to take a love language

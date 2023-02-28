@@ -24,7 +24,6 @@ export default function Results() {
     setState((old) => ({ ...old, presentQuestion: -1 }));
     let timer = setTimeout(() => {
       if (state.cache.name) {
-        setNoCache(false);
         setName(state.cache.name);
         setScores(
           Object.entries(state.cache.score)
@@ -45,6 +44,7 @@ export default function Results() {
               return { ll: name, score: x[1] };
             })
         );
+        setNoCache(false);
       }
     }, 1000);
     return () => clearTimeout(timer);
