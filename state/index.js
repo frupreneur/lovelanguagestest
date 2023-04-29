@@ -5,10 +5,10 @@ const AppContext = createContext();
 
 export default function StateProvider({ children }) {
   const [state, setState] = React.useState({
-    name: "Fru",
+    name: " ",
     score: {
       a: 0,
-      s: 5,
+      s: 0,
       g: 0,
       t: 0,
       pt: 0,
