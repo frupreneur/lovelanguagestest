@@ -11,6 +11,37 @@ const andika = Andika({
 });
 
 export default function Layout({ children }) {
+  React.useEffect(() => {
+    // Delay 3 seconds before showing ads
+    let timer = setTimeout(() => {
+      try {
+        // Get Ad Element
+        const autoAdScript = document.querySelector("#googleAdSenseScript");
+
+        // Remove "data-nscript"  script to avoid AdSense Warnings
+        if (autoAdScript.attributes["data-nscript"]) {
+          autoAdScript.removeAttribute("data-nscript");
+        }
+
+        // Remove "src"  attribute if available
+        if (autoAdScript.attributes["src"]) {
+          autoAdScript.removeAttribute("src");
+        }
+
+        // Add Script to initialize ads
+        autoAdScript.setAttribute(
+          "src",
+          `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4106258986656665`
+        );
+      } catch (err) {
+        console.error(err);
+      }
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, []);
   return (
     <>
       <Head>

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@next/font": "^13.1.2",
+    "caniuse-lite": "^1.0.30001541",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
     "next": "13.1.2",
