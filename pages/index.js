@@ -1,4 +1,4 @@
-import { Meta, Ad } from "@/components";
+import { Meta } from "@/components";
 import { DATABASE } from "@/db";
 import Link from "next/link";
 import Image from "next/image";
@@ -41,7 +41,6 @@ export default function Home(props) {
             </button>
           }
         </div>
-        <Ad />
 
         {/* <QuizContainer /> */}
         <article className="articleHome">
@@ -134,7 +133,6 @@ export default function Home(props) {
               <Link href="/quality-time">Learn more about Quality Time</Link>
             </p>
           </div>
-          <Ad />
           <p>
             It is important to note that everyone experiences and expresses love
             differently, and everyone's love language is unique to them. Some

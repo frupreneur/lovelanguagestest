@@ -34,3 +34,23 @@ export default function Ad() {
     </>
   );
 }
+
+
+/*
+
+Saudi Arabia
+Oman
+United Arab Emirates
+South Africa
+Nigeria
+Australia
+
+
+
+
+
+Guinea
+Papua New Guinea
+South Sudan
+
+*/ 

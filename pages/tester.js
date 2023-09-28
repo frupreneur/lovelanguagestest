@@ -1,5 +1,5 @@
 import React from "react";
-import { QuizContainer, Ad, Meta } from "@/components";
+import { QuizContainer, Meta } from "@/components";
 
 export default function Tester() {
   return (
